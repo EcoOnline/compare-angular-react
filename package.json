@@ -1,0 +1,35 @@
+{
+  "name": "compare",
+  "version": "0.0.0",
+  "description": "Compare react and angular2",
+  "author": "Remi Nyborg",
+  "license": "ISC",
+  "scripts": {
+    "react": "budo react/main.js:bundle.js -d ./public --live -- -t [ babelify --presets [ es2015 react ] ]",
+    "angular": "budo angular/main.ts:bundle.js -d ./public --live=* -- -p [ tsify ] "
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.13.2",
+    "babel-preset-react": "^6.11.1",
+    "babelify": "^7.3.0",
+    "browserify": "^13.1.0",
+    "budo": "^8.3.0",
+    "tsify": "^1.0.3",
+    "typescript": "^1.8.10"
+  },
+  "dependencies": {
+    "@angular/common": "2.0.0-rc.5",
+    "@angular/compiler": "2.0.0-rc.5",
+    "@angular/core": "2.0.0-rc.5",
+    "@angular/forms": "^0.3.0",
+    "@angular/platform-browser": "2.0.0-rc.5",
+    "@angular/platform-browser-dynamic": "^2.0.0-rc.5",
+    "react": "^15.3.0",
+    "react-dom": "^15.3.0",
+    "react-redux": "^4.4.5",
+    "redux": "^3.5.2",
+    "reflect-metadata": "^0.1.3",
+    "rxjs": "5.0.0-beta.6",
+    "zone.js": "^0.6.12"
+  }
+}
