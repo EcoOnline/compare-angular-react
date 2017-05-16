@@ -1,12 +1,12 @@
 # compare-angular-react
 A small comparison between angular and react used with redux
 
-# # install
+## install
 
     npm install
     typings install
 
-# # Use
+## use
 
 This repo uses budo and browserify to build and run (with live update) the react and angular files.
 This is implemented in npm start scripts:
